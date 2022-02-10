@@ -1,0 +1,27 @@
+{
+  "name": "yandex-practicum",
+  "version": "1.0.0",
+  "description": "middle-frontend course",
+  "scripts": {
+    "dev": "parcel index.hbs",
+    "build": "parcel build index.hbs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alx-skryabin/yandex-practicum.git"
+  },
+  "keywords": [
+    "js",
+    "yandex"
+  ],
+  "author": "@alx-skryabin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alx-skryabin/yandex-practicum/issues"
+  },
+  "homepage": "https://github.com/alx-skryabin/yandex-practicum#readme",
+  "devDependencies": {
+    "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "parcel": "^2.3.0"
+  }
+}
