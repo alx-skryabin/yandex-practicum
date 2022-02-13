@@ -1,19 +1,18 @@
 ---
-title: Login
+title: Index
 name: Aleksandr
 stylesheets:
-- ../../index.scss
-- ./login.scss
+- ./index.scss
 scripts:
-- ./login.ts
-- ./login-log.ts
+- ./index.ts
 ---
 
 {{#extend "baseHTML"}}
   {{#content "main"}}
     <main>
+      <div id="root"></div>
       <div>{{name}}</div>
-      <a href="../../index.hbs">index</a>
+      <a href="./pages/login/login.hbs">login</a>
     </main>
   {{/content}}
 {{/extend}}

@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+  {{#block "head"}}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>{{title}}</title>
+
+    {{#block "styles"}}
+      {{#each stylesheets}}
+        <link href="{{this}}" rel="stylesheet"/>
+      {{/each}}
+    {{/block}}
+  {{/block}}
+</head>
+
+<body>
+{{#block "body"}}
+
+  {{#block "main"}}{{/block}}
+
+  {{#block "scripts"}}
+    {{#each scripts}}
+      <script defer src="{{this}}" type="module"></script>
+    {{/each}}
+  {{/block}}
+{{/block}}
+</body>
+</html>

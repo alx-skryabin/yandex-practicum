@@ -3,3 +3,5 @@
 - parcel
 - typescript
 - handlebars
+- scss
+- netlify
