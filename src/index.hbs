@@ -14,5 +14,9 @@ scripts:
       <div>{{name}}</div>
       <a href="./pages/login/login.hbs">login</a>
     </main>
+
+    {{> button buttonName="save" buttonClass="save"}}
+    {{> button buttonName="reset" buttonClass="reset"}}
+    {{> button buttonName=name}}
   {{/content}}
 {{/extend}}

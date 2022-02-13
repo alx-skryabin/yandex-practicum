@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "middle-frontend course",
   "scripts": {
-    "dev": "parcel src/index.hbs",
+    "start": "parcel src/index.hbs",
     "build": "parcel build src/index.hbs"
   },
   "repository": {
