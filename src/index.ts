@@ -1,5 +1,4 @@
 import {sum} from './modules/sum'
-// import '../index.scss'
 
 const root = document.querySelector('#root')
 

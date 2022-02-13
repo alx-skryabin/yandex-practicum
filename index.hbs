@@ -1,5 +1,4 @@
 ---
-id: "root"
 name: "Alex"
 ---
 <html lang="en">
@@ -8,10 +7,13 @@ name: "Alex"
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Practicum</title>
+  <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
+  <link rel="stylesheet" href="src/index.scss">
 </head>
 <body>
-<div id="{{ id }}"></div>
-<span>{{name}}</span>
+
+<div id="root"></div>
+<div>{{name}}</div>
 <a href="./src/pages/login/login.hbs">login</a>
 
 <script src="src/index.ts" type="module"></script>
