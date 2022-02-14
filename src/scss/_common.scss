@@ -2,6 +2,11 @@
 @import './_variables';
 @import './nav-menu';
 
+* {
+  scrollbar-color: #333 #777;
+  scrollbar-width: thin;
+}
+
 body {
   font-family: verdana, serif;
   position: relative;

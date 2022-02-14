@@ -11,7 +11,73 @@ scripts:
     {{> nav-menu}}
 
     <main class="page page-chat">
-      chat
+      <div class="chat-sidebar">
+        <div class="sidebar__profile">
+          {{> avatar-icon url="https://cs6.pikabu.ru/avatars/1628/v1628506-2030821899.jpg"}}
+          <div class="profile__link-view">
+            <a href="#">My profile</a>
+          </div>
+        </div>
+        <div class="sidebar__search">
+          <label>
+            <input type="search" placeholder="Search...">
+          </label>
+        </div>
+        <div class="sidebar__listing">
+          <div class="listing__chat">
+            {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
+            {{> listing-chat user="Андрей" time="19:56" text="Привет! как дела? чем занимаешься?" count="1"}}
+          </div>
+
+          <div class="listing__chat listing__chat_active">
+            {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
+            {{> listing-chat user="Алина" time="Вчера" text="Привет! как дела?" count="9+"}}
+          </div>
+
+          <div class="listing__chat">
+            {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
+            {{> listing-chat user="Александр" time="Вчера" text="Привет!" count=""}}
+          </div>
+
+          <div class="listing__chat">
+            {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
+            {{> listing-chat user="Аня" time="Позавчера" text="Привет!" count="7"}}
+          </div>
+
+          <div class="listing__chat">
+            {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
+            {{> listing-chat user="Noname" time="Year ago" text="Hai" count=""}}
+          </div>
+
+          <div class="listing__chat">
+            {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
+            {{> listing-chat user="Noname" time="Year ago" text="Hai" count=""}}
+          </div>
+
+          <div class="listing__chat">
+            {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
+            {{> listing-chat user="Noname" time="Year ago" text="Hai" count=""}}
+          </div>
+
+          <div class="listing__chat">
+            {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
+            {{> listing-chat user="Noname" time="Year ago" text="Hai" count=""}}
+          </div>
+
+          <div class="listing__chat">
+            {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
+            {{> listing-chat user="Noname" time="Year ago" text="Hai" count=""}}
+          </div>
+
+          <div class="listing__chat">
+            {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
+            {{> listing-chat user="Noname" time="Year ago" text="Hai" count="3"}}
+          </div>
+        </div>
+      </div>
+      <div class="chat-dialog">
+        dialog
+      </div>
     </main>
   {{/content}}
 {{/extend}}
