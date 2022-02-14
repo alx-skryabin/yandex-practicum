@@ -25,23 +25,23 @@ scripts:
         </div>
         <div class="sidebar__listing">
           <div class="listing__chat">
-            {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
-            {{> listing-chat user="Андрей" time="19:56" text="Привет! как дела? чем занимаешься?" count="1"}}
+            {{> avatar-icon url="https://www.vindyputri.com/wp-content/uploads/2016/01/7b6f5523240799.5632176f43717.png"}}
+            {{> listing-chat user="Kate" time="19:56" text="Hi! how are you? What are you doing?" count="1"}}
           </div>
 
           <div class="listing__chat listing__chat_active">
-            {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
-            {{> listing-chat user="Алина" time="Вчера" text="Привет! как дела?" count="9+"}}
+            {{> avatar-icon url="https://www.vindyputri.com/wp-content/uploads/2016/01/7b6f5523240799.5632176f43717.png"}}
+            {{> listing-chat user="Alina" time="Yesterday" text="Hi! how are you?" count="9+"}}
           </div>
 
           <div class="listing__chat">
             {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
-            {{> listing-chat user="Александр" time="Вчера" text="Привет!" count=""}}
+            {{> listing-chat user="Александр" time="Yesterday" text="Hello!" count=""}}
           </div>
 
           <div class="listing__chat">
-            {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
-            {{> listing-chat user="Аня" time="Позавчера" text="Привет!" count="7"}}
+            {{> avatar-icon url="https://www.vindyputri.com/wp-content/uploads/2016/01/7b6f5523240799.5632176f43717.png"}}
+            {{> listing-chat user="Anya" time="Two days ago" text="Hello!" count="7"}}
           </div>
 
           <div class="listing__chat">
@@ -76,7 +76,26 @@ scripts:
         </div>
       </div>
       <div class="chat-dialog">
-        dialog
+        <div class="dialog__header">
+          {{> avatar-icon url="https://cs6.pikabu.ru/avatars/1628/v1628506-2030821899.jpg"}}
+          <span>Alina</span>
+        </div>
+        <div class="dialog__messages">
+          <!--          <div class="messages__common messages__own">Hello</div>-->
+          <!--          <div class="messages__common messages__other">What are you doing?</div>-->
+          <!--          <div class="messages__common messages__own">Running</div>-->
+          <!--          <div class="messages__common messages__own">And you?</div>-->
+          <!--          <div class="messages__common messages__other">I also run</div>-->
+        </div>
+        <div class="dialog__form">
+          <form>
+            <label>
+              <input type="text" placeholder="Type here...">
+            </label>
+
+            <button type="submit">🡢</button>
+          </form>
+        </div>
       </div>
     </main>
   {{/content}}

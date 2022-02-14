@@ -1,0 +1,85 @@
+.chat-dialog {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: calc(100% - #{$sidebar-width});
+  min-width: 300px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+
+  .dialog__header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #555;
+
+    .avatar-icon img {
+      width: 40px;
+      height: 40px;
+    }
+
+    span {
+      margin-left: 15px;
+      color: white;
+    }
+  }
+
+  .dialog__messages {
+    padding: 10px 0;
+    height: 100%;
+
+    .messages__common {
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    .messages__own {
+      text-align: right;
+      color: $blue-lite;
+    }
+
+    .messages__other {
+      text-align: left;
+    }
+  }
+
+  .dialog__form {
+    form {
+      display: flex;
+      width: 100%;
+      margin-bottom: 0;
+
+      label {
+        width: 100%;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+        background: #353557;
+        color: white;
+        height: 40px;
+        padding: 0 10px;
+        border-radius: 10px 0 0 10px;
+        outline: none;
+      }
+
+      button {
+        border: none;
+        border-radius: 0 10px 10px 0;
+        background: $blue-lite;
+        color: white;
+        width: 50px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: .2s;
+
+        &:hover {
+          background: $blue;
+          transition: .2s;
+        }
+      }
+    }
+  }
+}
