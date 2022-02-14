@@ -1,0 +1,40 @@
+---
+title: Login
+stylesheets:
+- ./reg.scss
+scripts:
+- ./reg.ts
+- ./reg-log.ts
+---
+
+{{#extend "baseHTML"}}
+  {{#content "main"}}
+    {{> nav-menu}}
+
+    <main class="page page-reg">
+      <div class="form-wrap">
+        <div class="form-title">Registration</div>
+
+        <form class="form">
+          <div class="form__auth-fields">
+            {{> auth-input title="Mail" type="text" name="email" placeholder="box@gmail.com"}}
+            {{> auth-input title="Login" type="text" name="login" placeholder="Zevs"}}
+            {{> auth-input title="First name" type="text" name="first_name" placeholder="Petr"}}
+            {{> auth-input title="Second name" type="text" name="second_name" placeholder="Blaid"}}
+            {{> auth-input title="Phone" type="text" name="phone" placeholder="88001001035"}}
+            {{> auth-input title="Password" type="password" name="password" placeholder="*******"}}
+            {{> auth-input title="Password repeat" type="password" name="password-repeat" placeholder="*******"}}
+
+            <div class="form__errors" hidden>Not valid login or password!</div>
+          </div>
+
+          {{> auth-button title="Registration"}}
+
+          <div class="form__switch">
+            <a href="/">Login</a>
+          </div>
+        </form>
+      </div>
+    </main>
+  {{/content}}
+{{/extend}}

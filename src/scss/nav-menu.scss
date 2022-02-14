@@ -1,0 +1,31 @@
+.nav-menu {
+  position: absolute;
+  right: 20px;
+  display: flex;
+
+  .nav-menu__item {
+    display: inline-block;
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, .3);
+    padding: 4px 8px 4px;
+    height: 100%;
+    font-size: 14px;
+    text-decoration: none;
+    color: #eee;
+    transition: .2s;
+
+    &:hover {
+      background: rgba(255, 255, 255, .7);
+      color: #223;
+      transition: .2s;
+    }
+
+    &:first-child {
+      border-radius: 0 0 0 6px;
+    }
+
+    &:last-child {
+      border-radius: 0 0 6px 0;
+    }
+  }
+}

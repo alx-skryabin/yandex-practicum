@@ -1,15 +1,12 @@
-@import "~normalize-scss";
+@import "./scss/common";
+@import "./scss/auth-common";
 
-body {
-  background: #223;
-  font-size: 2em;
-  color: white;
+.page-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.save {
-  background: lime;
-}
-
-.reset {
-  background: tomato;
+.form__auth-fields {
+  min-height: 200px;
 }

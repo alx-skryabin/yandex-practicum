@@ -1,0 +1,83 @@
+//Form
+.form-wrap {
+  background: rgba(0, 0, 0, .2);
+  box-shadow: 0 10px 20px 5px rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-sizing: border-box;
+  max-width: 300px;
+  padding: 20px;
+
+  .form-title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: white;
+  }
+
+  .form {
+    margin-bottom: 0;
+
+    .form__label {
+      display: inline-block;
+      margin-bottom: 20px;
+      width: 100%;
+
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #ddd;
+        outline: none;
+        padding: 5px 0;
+        font-size: 1.1rem;
+        background: transparent;
+        transition: .2s;
+        color: white;
+
+        &:focus {
+          border-bottom: 1px solid $sysBlueLite;
+          transition: .2s;
+        }
+      }
+
+      span {
+        color: #ddd;
+        display: inline-block;
+        font-size: .8rem;
+        margin-bottom: 5px;
+      }
+    }
+
+    .form__errors {
+      font-size: .8rem;
+      color: tomato;
+    }
+
+    .form__button {
+      width: 100%;
+      font-size: 1.1rem;
+      background: $sysBlue;
+      border: none;
+      padding: 8px 10px;
+      border-radius: 15px;
+      color: white;
+      cursor: pointer;
+      transition: .2s;
+
+      &:hover {
+        background: $sysBlueLite;
+        transition: .2s;
+      }
+    }
+
+    .form__switch {
+      text-align: center;
+      margin-top: 15px;
+
+      a {
+        color: white;
+        transition: .2s;
+        font-size: .9rem;
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "middle-frontend course",
   "scripts": {
-    "start": "parcel src/index.hbs",
+    "start": "parcel src/index.hbs --port 3050 --no-cache",
     "build": "parcel build src/index.hbs"
   },
   "repository": {

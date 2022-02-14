@@ -1,6 +1,5 @@
 ---
-title: Index
-name: Aleksandr
+title: Authorization
 stylesheets:
 - ./index.scss
 scripts:
@@ -9,14 +8,25 @@ scripts:
 
 {{#extend "baseHTML"}}
   {{#content "main"}}
-    <main>
-      <div id="root"></div>
-      <div>{{name}}</div>
-      <a href="./pages/login/login.hbs">login</a>
-    </main>
+    <main class="page page-index">
+      <div class="form-wrap">
+        <div class="form-title">Login</div>
 
-    {{> button buttonName="save" buttonClass="save"}}
-    {{> button buttonName="reset" buttonClass="reset"}}
-    {{> button buttonName=name}}
+        <form class="form">
+          <div class="form__auth-fields">
+            {{> auth-input title="Login" type="text" name="login" placeholder="Zevs"}}
+            {{> auth-input title="Password" type="password" name="password" placeholder="*******"}}
+
+            <div class="form__errors" hidden>Not valid login or password!</div>
+          </div>
+
+          {{> auth-button title="Enter"}}
+
+          <div class="form__switch">
+            <a href="pages/reg/reg.hbs">Registration</a>
+          </div>
+        </form>
+      </div>
+    </main>
   {{/content}}
 {{/extend}}
