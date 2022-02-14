@@ -1,0 +1,22 @@
+.error-redirect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    color: white;
+    font-size: 4rem;
+    margin: 10px;
+  }
+
+  div {
+    color: grey;
+    font-size: .9rem;
+  }
+
+  a {
+    margin-top: 30px;
+    color: $sysBlueLite;
+  }
+}
