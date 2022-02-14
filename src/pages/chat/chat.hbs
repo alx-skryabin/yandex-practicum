@@ -1,0 +1,17 @@
+---
+title: Chat
+stylesheets:
+- ./chat.scss
+scripts:
+- ./chat.ts
+---
+
+{{#extend "baseHTML"}}
+  {{#content "main"}}
+    {{> nav-menu}}
+
+    <main class="page page-chat">
+      chat
+    </main>
+  {{/content}}
+{{/extend}}

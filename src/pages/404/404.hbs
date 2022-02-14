@@ -1,0 +1,17 @@
+---
+title: Server 404
+stylesheets:
+- ./404.scss
+scripts:
+- ./404.ts
+---
+
+{{#extend "baseHTML"}}
+  {{#content "main"}}
+    {{> nav-menu}}
+
+    <main class="page page-404">
+        404
+    </main>
+  {{/content}}
+{{/extend}}

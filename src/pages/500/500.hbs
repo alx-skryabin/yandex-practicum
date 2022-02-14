@@ -1,0 +1,17 @@
+---
+title: Server 500
+stylesheets:
+- ./500.scss
+scripts:
+- ./500.ts
+---
+
+{{#extend "baseHTML"}}
+  {{#content "main"}}
+    {{> nav-menu}}
+
+    <main class="page page-500">
+      500
+    </main>
+  {{/content}}
+{{/extend}}

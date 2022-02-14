@@ -1,12 +1,7 @@
 @import "../../scss/_common";
-@import "../../scss/auth-common";
 
-.page-reg {
+.page-500 {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  .form__errors {
-    margin-bottom: 15px;
-  }
 }

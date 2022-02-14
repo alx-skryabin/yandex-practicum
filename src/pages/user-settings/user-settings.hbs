@@ -1,0 +1,17 @@
+---
+title: User settings
+stylesheets:
+- ./user-settings.scss
+scripts:
+- ./user-settings.ts
+---
+
+{{#extend "baseHTML"}}
+  {{#content "main"}}
+    {{> nav-menu}}
+
+    <main class="page page-user-settings">
+      user settings
+    </main>
+  {{/content}}
+{{/extend}}
