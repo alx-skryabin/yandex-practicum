@@ -1,0 +1,15 @@
+%link-lite {
+  display: inline-block;
+  text-decoration: none;
+  color: $blue-lite;
+  background: $blue-mute;
+  font-size: .9rem;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: .2s;
+
+  &:hover {
+    color: white;
+    transition: .2s;
+  }
+}

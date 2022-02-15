@@ -1,5 +1,7 @@
 @import "~normalize-scss";
 @import './_variables';
+@import './_mixin';
+@import './_extend';
 @import './nav-menu';
 
 * {
@@ -23,5 +25,12 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+.avatar-icon img {
+  border-radius: 50%;
+  @include size-img(50px);
+}
+
+
 
 

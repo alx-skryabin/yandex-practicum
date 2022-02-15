@@ -15,8 +15,7 @@
     border-bottom: 1px solid #555;
 
     .avatar-icon img {
-      width: 40px;
-      height: 40px;
+      @include size-img(40px);
     }
 
     span {
@@ -57,7 +56,7 @@
       input {
         width: 100%;
         border: none;
-        background: #353557;
+        background: $blue-mute;
         color: white;
         height: 40px;
         padding: 0 20px;

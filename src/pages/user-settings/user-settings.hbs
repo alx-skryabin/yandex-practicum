@@ -11,7 +11,24 @@ scripts:
     {{> nav-menu}}
 
     <main class="page page-user-settings">
-      user settings
+      <div class="user-settings__avatar">
+        {{> avatar-icon url="https://qph.fs.quoracdn.net/main-thumb-74641939-200-jbhncquhoaqhiderryhazssxtkemxdhq.jpeg"}}
+        <span>Petr</span>
+      </div>
+      <div class="user-settings__data">
+        <div class="user-settings__list">
+          {{> setting-user-item name="Mail" value="box@gmail.com"}}
+          {{> setting-user-item name="Login" value="Zevs"}}
+          {{> setting-user-item name="First name" value="Petr"}}
+          {{> setting-user-item name="Second name" value="Blaid"}}
+          {{> setting-user-item name="Name in chat" value="God Zevs"}}
+          {{> setting-user-item name="Phone" value="88001001035"}}
+        </div>
+      </div>
+      <div class="user-settings__button">
+        <a href="../chat/chat.hbs"><i class="fas fa-door-open"></i> Exit</a>
+        <a href="#"><i class="far fa-edit"></i> Edit</a>
+      </div>
     </main>
   {{/content}}
 {{/extend}}
