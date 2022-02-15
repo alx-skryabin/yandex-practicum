@@ -31,5 +31,9 @@
   },
   "dependencies": {
     "normalize-scss": "^7.0.1"
+  },
+  "engines" : {
+    "npm" : ">=8.0.0",
+    "node" : ">=16.0.0"
   }
 }
