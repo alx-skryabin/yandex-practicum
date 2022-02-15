@@ -2,11 +2,12 @@
   position: absolute;
   right: 15px;
   display: flex;
+  z-index: 100;
 
   .nav-menu__item {
     display: inline-block;
     box-sizing: border-box;
-    background: rgba(255, 255, 255, .3);
+    background: #353557;
     padding: 4px 8px 4px;
     height: 100%;
     font-size: 14px;
@@ -15,7 +16,7 @@
     transition: .2s;
 
     &:hover {
-      background: rgba(255, 255, 255, .7);
+      background: rgba(255, 255, 255, .6);
       color: #223;
       transition: .2s;
     }
