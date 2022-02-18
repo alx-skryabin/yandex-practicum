@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "middle-frontend course",
   "scripts": {
-    "start": "parcel src/index.hbs --port 3050 --no-cache",
-    "build": "parcel build src/index.hbs"
+    "client": "parcel src/index.hbs --port 3050",
+    "build": "parcel build src/index.hbs",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\""
   },
   "repository": {
     "type": "git",
@@ -30,10 +32,13 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
+    "concurrently": "^7.0.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
     "normalize-scss": "^7.0.1"
   },
-  "engines" : {
-    "npm" : ">=8.0.0",
-    "node" : ">=16.0.0"
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=16.0.0"
   }
 }
