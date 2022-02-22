@@ -1,0 +1,36 @@
+//@import "~normalize-scss";
+@import './_variables';
+@import './_mixin';
+@import './_extend';
+@import './nav-menu';
+
+* {
+  scrollbar-color: #333 #777;
+  scrollbar-width: thin;
+}
+
+body {
+  font-family: verdana, serif;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #223;
+}
+
+//Page
+.page {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.avatar-icon img {
+  border-radius: 50%;
+  @include size-img(50px);
+}
+
+
+
+

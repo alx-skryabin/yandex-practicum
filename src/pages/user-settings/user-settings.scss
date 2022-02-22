@@ -1,0 +1,62 @@
+@import "../../scss/_common";
+
+.page-user-settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .avatar-icon img {
+    @include size-img(100px);
+  }
+
+  .user-settings__avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+      margin-top: 20px;
+      font-weight: bold;
+      color: white;
+      font-size: 1.2rem;
+    }
+  }
+
+  .user-settings__data {
+    margin: 50px 0 30px;
+  }
+
+  .user-settings__list {
+    color: white;
+    font-size: .9rem;
+    min-width: 320px;
+
+    .user-settings__list-item {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #555;
+      padding: 5px 0;
+      margin-bottom: 5px;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      div:first-child {
+        font-weight: bold;
+        color: #ccc;
+      }
+    }
+  }
+
+  .user-settings__button {
+    display: flex;
+    justify-content: space-around;
+    min-width: 320px;
+
+    a {
+      @extend %link-lite;
+    }
+  }
+}

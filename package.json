@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "middle-frontend course",
   "scripts": {
-    "dev": "parcel index.hbs",
-    "build": "parcel build index.hbs"
+    "hot-client": "parcel src/index.hbs -p 3030",
+    "build": "parcel build src/index.hbs",
+    "client": "parcel watch src/index.hbs",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,21 @@
   "homepage": "https://github.com/alx-skryabin/yandex-practicum#readme",
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
-    "parcel": "^2.3.0"
+    "@parcel/config-default": "^2.3.1",
+    "@parcel/transformer-sass": "^2.3.1",
+    "parcel": "^2.3.0",
+    "parcel-plugin-handlebars": "^0.4.4",
+    "sass": "^1.49.7",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "normalize-scss": "^7.0.1"
+  },
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=16.0.0"
   }
 }
