@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "middle-frontend course",
   "scripts": {
+    "start": "parcel src/index.hbs -p 3030",
     "hot-client": "parcel src/index.hbs -p 3030",
     "build": "parcel build src/index.hbs",
     "client": "parcel watch src/index.hbs",
