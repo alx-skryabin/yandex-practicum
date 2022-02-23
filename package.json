@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "middle-frontend course",
   "scripts": {
-    "start": "parcel src/index.hbs -p 3030",
     "hot-client": "parcel src/index.hbs -p 3030",
     "build": "parcel build src/index.hbs",
     "client": "parcel watch src/index.hbs",
@@ -38,5 +37,9 @@
     "express": "^4.17.3",
     "nodemon": "^2.0.15",
     "normalize-scss": "^7.0.1"
+  },
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=16.0.0"
   }
 }
